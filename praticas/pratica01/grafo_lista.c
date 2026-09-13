@@ -24,7 +24,7 @@ static int adicionar_no(GrafoLista *grafo, int origem, int destino) {
     No *novo = malloc(sizeof(*novo));
     if (novo == NULL) {
         return 0;
-    }
+    } 
     novo->destino = destino;
     novo->prox = grafo->adj[origem];
     grafo->adj[origem] = novo;
